@@ -1,0 +1,112 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card {
+    height: 150px; 
+    margin: 5px;
+    border-radius: 1%;
+    border: 3px solid rgb(0, 0, 0); /* Pevná šířka a výrazná barva okrajů */
+    background-color: #ffffff;
+    
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #dddddd;
+    border-color: #ff0000; /* Změna barvy okraje při najetí myší */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-img-top {
+    width: 50%; 
+    height: 100px;
+    object-fit: cover;  
+    border-radius: 50%;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.card-title {
+    margin-bottom: 0;
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+.card-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 100px) {
+    .card {
+        flex: 1 1 calc(100% - 20px); 
+        margin-right: 0;
+    }
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #0c4d79;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(180deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loadP {
+    display: block;
+}
+
+#regionSelect {
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #193547;
+    color: #fff;
+    border-bottom: none;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.btn-close {
+    color: #ffffff;
+}

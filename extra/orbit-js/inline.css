@@ -1,0 +1,23 @@
+#sedm {
+  /* Your styles here */
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+#numberInput {
+  /* Additional styles for the numberInput if needed */
+  margin-bottom: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #f0f0f0; /* nastavte podle potřeby */
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbitals</title>
+  <link rel="stylesheet" href="orbit-js/inline.css">
+
+</head>
+
+
+<body>
+  
+<div id="sedm">
+  
+
+  <label for="numberInput">Number of ORBITALS:</label>
+  <input type="number" id="numberInput" placeholder="Enter number of bodies" oninput="nwe()"/>
+
+<br>
+
+
+<table>
+  <tr>
+<td>
+  <div id="nummersInputsContainer"></div>
+</td>
+
+<td>
+  <div id="velocityInputsContainer"></div>
+</td>
+  
+<td>
+  <div id="orbitInputsContainer"></div>
+  
+</td>
+
+<td>
+  <div id="defectInputsContainer"></div>
+  
+</td>
+
+  </tr>
+</table>
+
+<br>
+<button onclick="resetAnimation()">Paste & Restart</button>
+<br><br>
+<div>
+  <label for="numberInput">Set orbits: </label>
+<button onclick="plusorb(0)">+</button>
+<button onclick="plusorb(1)">-</button>
+<label for="numberInput"><div id="angDisplay"></div></label>
+</div>
+<div>
+  <label for="numberInput">Set velocites: </label>
+  <button onclick="plusvel(0)">+</button>
+  <button onclick="plusvel(1)">-</button>
+  <label for="numberInput"><div id="desDisplay"></div></label>
+</div>
+<div>
+  <label for="numberInput">Set Rotation: </label>
+  <button onclick="plusrot(0)">+</button>
+  <button onclick="plusrot(1)">-</button>
+  <label for="numberInput"><div id="rotDisplay"></div></label>
+</div>
+<div>
+  <label for="numberInput">Set StrokeWeight: </label>
+  <button onclick="chanWei(0)">+</button>
+  <button onclick="chanWei(1)">-</button>
+  <label for="numberInput"><div id="WeiDisplay"></div></label>
+</div>
+<div><br>
+  <label for="settings">Settings: </label>
+  <button onclick="mrizon()">MŘÍŽKA</button>
+  <button onclick="onobjekts()">Zobrazit OBJEKTY</button>
+  <button onclick="colormod()">Color MODE</button>
+</div>
+
+
+<br><br><a href="/"><button>PORTFOLIO</button></a><br>
+
+<button onclick="sendDataToServer()">EXportovatData</button>
+</div>
+
+
+
+<canvas id="orbitCanvas"></canvas>
+
+<script src="orbit-js/fullscreen.js"></script>
+<script src="orbit-js/script.js"></script>
+<script src="orbit-js/p5.js"></script>
+
+</body>
+</html>
